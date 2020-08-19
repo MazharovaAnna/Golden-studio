@@ -11,6 +11,9 @@ h6 {
   margin: 0;
   padding: 0;
 }
+p {
+  margin: 0;
+}
 *,
 *:before,
 *:after {
@@ -41,11 +44,6 @@ h6 {
 }
 .header__logo {
 }
-/* .header__img{
-  display: block;
-  max-width: 100%;
-  height: auto;
-} */
 .nav {
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
@@ -56,9 +54,14 @@ h6 {
   text-decoration: none;
   color: #fff;
   margin-left: 40px;
+  transition: color 0.1s linear;
 }
 .nav__link:first-child {
   margin-left: 0;
+}
+.nav__link:hover {
+  text-decoration: underline;
+  color: #f2d048;
 }
 /*intro
 ===================*/
@@ -102,6 +105,7 @@ h6 {
   display: inline-block;
   vertical-align: top;
   border: 0;
+  border-radius: 3px;
   cursor: pointer;
   text-transform: uppercase;
   text-decoration: none;
@@ -110,6 +114,12 @@ h6 {
 }
 .btn--yellow {
   background-color: #f2d048;
+}
+.btn--yellow:hover {
+  background-color: #000;
+  color: #f2d048;
+  transition: color 0.1s linear;
+  transition: background-color 0.1s linear;
 }
 /*section
 ===================*/
@@ -208,6 +218,7 @@ h6 {
 }
 .portfolio__photo {
 }
+
 .portfolio__img {
   display: block;
   max-width: 100%;
@@ -233,37 +244,29 @@ h6 {
 /*card
 ===================*/
 .card {
-  /* width: 60%; */
-  position: relative;
-  margin-bottom: 95px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .card__item {
   display: flex;
-  margin-bottom: 90px;
+  justify-content: center;
+  position: relative;
 }
-.card__item--left {
+.card__description {
   position: absolute;
-  top: 0;
-  right: 355px;
-  z-index: 1;
 }
-.card__item--right {
-  position: absolute;
-  top: 100px;
-  left: 367px;
-  z-index: 1;
+.card--text-right {
+  left: 65%;
 }
-.card__inf {
-}
-.card__inf--left {
-  margin-right: 40px;
+.card--text-left {
+  right: 65%;
   text-align: right;
 }
-.card__inf--right {
-  margin-left: 40px;
-  text-align: left;
-}
+
 .card__title {
+  text-transform: uppercase;
+  line-height: 1.2;
   color: #272727;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -278,6 +281,8 @@ h6 {
   padding: 0 0 20px 0;
 }
 .card__text {
+  color: rgb(118, 118, 118);
+  line-height: 1.2;
   font-family: "Roboto Slab", serif;
   font-weight: 400;
   font-size: 14px;
@@ -287,11 +292,49 @@ h6 {
   display: flex;
   width: 185px;
   height: 185px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 80px;
   border-radius: 50%;
   border: 4px solid #f1f1f1;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+.card__photo::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 80px;
+  background-color: #f1f1f1;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+}
+.card__photography {
+  display: flex;
+  width: 185px;
+  height: 185px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  border-radius: 50%;
+  border: 4px solid #f1f1f1;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.card__inner {
+  position: absolute;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.7;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
 }
 /*team
 ===================*/
@@ -312,10 +355,16 @@ h6 {
   height: 230px;
   margin: 0 auto 20px;
   border-radius: 50%;
-  border: 9px solid #fff;
+  border: 4px solid #fff;
   align-items: center;
   justify-content: center;
 }
+.team__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .team__name {
   color: #272727;
   font-family: "Montserrat", sans-serif;
@@ -342,6 +391,12 @@ h6 {
   align-items: center;
   justify-content: center;
 }
+.team__net:hover {
+  background-color: #000;
+  color: #f2d048;
+  transition: color 0.1s linear;
+  transition: background-color 0.1s linear;
+}
 .team__inf {
   font-family: "Roboto Slab", serif;
   font-weight: 400;
@@ -363,27 +418,80 @@ h6 {
 /*contact
 ===================*/
 .contact {
+  text-align: center;
+}
+.contact__inner {
+  display: flex;
+}
+.contact__item {
+  width: 50%;
+  margin: 0 30px 0 0;
+}
+.contact__item:last-child {
+  margin: 0;
+}
+.contact__input {
+  margin-bottom: 30px;
+}
+.contact__inf {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #bababa;
+  text-transform: uppercase;
+  background-color: #fff;
+  border: 1px solid #cbcbcb;
+  border-radius: 3px;
+  outline: none;
+  resize: none;
+  padding: 15px 20px;
+  width: 460px;
+  height: 50px;
+}
+.contact__inf--mess {
+  resize: none;
+  height: 210px;
+}
+
+.contact__btn {
+  padding: 25px 50px;
 }
 /*footer
 ===================*/
 .footer {
+}
+.footer__inner {
   display: flex;
+  text-align: center;
+  margin: 20px 0;
 }
 .copyrighte {
   font-size: 14px;
   font-family: "Roboto Slab", serif;
   font-weight: 400;
   color: #565656;
+  padding-right: 120px;
+  margin: auto 0;
 }
 .footer__network {
   display: flex;
+  justify-content: space-between;
 }
 .footer__net {
   color: #fff;
   background-color: #272727;
   padding: 10px;
   margin: 0 5px;
+
   text-align: center;
   justify-content: center;
   border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.footer__net:hover {
+  color: #f2d048;
+  background-color: #272727;
+  transition: color 0.1s linear;
+  transition: background-color 0.1s linear;
 }

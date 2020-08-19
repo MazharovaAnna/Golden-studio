@@ -194,7 +194,7 @@
         </div>
         <div class="card">
           <div class="card__item card__item--left">
-            <div class="card__inf card__inf--left">
+            <div class="card__description card--text-left">
               <div class="card__title">July 2010</div>
               <div class="card__subtitle">Our Humble Beginnings</div>
               <div class="card__text">
@@ -212,7 +212,7 @@
             <div class="card__photo">
               <img class="card__img" src="./img/about/Image-2.png" alt="" />
             </div>
-            <div class="card__inf card__inf--right">
+            <div class="card__description card--text-right">
               <div class="card__title">January 2011</div>
               <div class="card__subtitle">Facing Startup Battles</div>
               <div class="card__text">
@@ -224,7 +224,50 @@
               </div>
             </div>
           </div>
+          <div class="card__item card__item--left">
+            <div class="card__description card--text-left">
+              <div class="card__title">December 2012</div>
+              <div class="card__subtitle">Enter The Dark Days</div>
+              <div class="card__text">
+                Proin iaculis purus consequat sem cure digni ssim. Donec
+                porttitora entum suscipit aenean rhoncus posuere odio in
+                tincidunt. Proin iaculis purus consequat sem cure digni.
+              </div>
+            </div>
+            <div class="card__photo">
+              <img class="card__img" src="./img/about/Image-3.png" alt="" />
+            </div>
+          </div>
+          <div class="card__item card__item--right">
+            <div class="card__photo">
+              <img class="card__img" src="./img/about/Image-4.png" alt="" />
+            </div>
+            <div class="card__description card--text-right">
+              <div class="card__title">february 2014</div>
+              <div class="card__subtitle">Our Triumph</div>
+              <div class="card__text">
+                Proin iaculis purus consequat sem cure digni ssim. Donec
+                porttitora entum suscipit aenean rhoncus posuere odio in
+                tincidunt. Proin iaculis purus consequat sem cure digni ssim.
+                Donec porttitora entum suscipit aenean.
+              </div>
+            </div>
+          </div>
+          <div class="card__item">
+            <div class="card__photography">
+              <img class="card__img" src="./img/about/Image-5.png" alt="" />
+              <div class="card__inner">
+                <p>
+                  Our<br />
+                  Story<br />
+                  Continues<br />
+                  ...
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+        <!--/.card -->
       </div>
     </section>
     <!--/.section -->
@@ -237,7 +280,7 @@
         <div class="team">
           <div class="team__item">
             <div class="team__photo">
-              <img src="./img/team/img-1.png" alt="" />
+              <img class="team__img" src="./img/team/img-1.png" alt="" />
             </div>
             <div class="team__name">Kimberly Thompson</div>
             <div class="team__prof">Marketer</div>
@@ -255,7 +298,7 @@
           </div>
           <div class="team__item">
             <div class="team__photo">
-              <img src="./img/team/img-1.png" alt="" />
+              <img class="team__img" src="./img/team/img-1.png" alt="" />
             </div>
             <div class="team__name">Rico Massimo</div>
             <div class="team__prof">Coder</div>
@@ -273,7 +316,7 @@
           </div>
           <div class="team__item">
             <div class="team__photo">
-              <img src="./img/team/img-1.png" alt="" />
+              <img class="team__img" src="./img/team/img-1.png" alt="" />
             </div>
             <div class="team__name">Uku Mason</div>
             <div class="team__prof">Graphic Designer</div>
@@ -313,27 +356,83 @@
     </div>
 
     <section class="section section--black">
-      <div class="section__header">
-        <h2 class="section__title section__title--white">Contact us</h2>
-        <h3 class="section__text section__text--white">
-          Proin iaculis purus consequat sem cure.
-        </h3>
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title section__title--white">Contact us</h2>
+          <h3 class="section__text section__text--white">
+            Proin iaculis purus consequat sem cure.
+          </h3>
+        </div>
+
+        <div class="contact">
+          <div class="contact__inner">
+            <div class="contact__item">
+              <form action="/" method="">
+                <div class="contact__input">
+                  <input
+                    class="contact__inf"
+                    type="text"
+                    name="Your Name*"
+                    maxlength="15"
+                    placeholder="Your Name *"
+                  />
+                </div>
+                <div class="contact__input">
+                  <input
+                    class="contact__inf"
+                    type="text"
+                    name="Your e-mail*"
+                    maxlength="20"
+                    placeholder="Your e-mail *"
+                  />
+                </div>
+                <div class="contact__input">
+                  <input
+                    class="contact__inf"
+                    type="text"
+                    name="Subject"
+                    maxlength="30"
+                    placeholder="Subject *"
+                  />
+                </div>
+              </form>
+            </div>
+
+            <div class="contact__item">
+              <form action="/" method="">
+                <div class="contact__input">
+                  <textarea
+                    class="contact__inf contact__inf--mess"
+                    placeholder="Your message *"
+                    name="Your message"
+                  >
+                  </textarea>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="contact__btn">
+            <a href="#" class="btn btn--yellow">Send Message</a>
+          </div>
+        </div>
       </div>
-      <div class="contact"></div>
     </section>
+
     <!--/.section -->
     <footer class="footer">
       <div class="container">
-        <div class="copyrighte">© Copyright 2014 FreebiesXpress.com</div>
-        <div class="footer__network">
-          <div class="footer__net">
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-          </div>
-          <div class="footer__net">
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-          </div>
-          <div class="footer__net">
-            <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+        <div class="footer__inner">
+          <div class="copyrighte">© Copyright 2014 FreebiesXpress.com</div>
+          <div class="footer__network">
+            <div class="footer__net">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </div>
+            <div class="footer__net">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </div>
+            <div class="footer__net">
+              <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+            </div>
           </div>
         </div>
       </div>
