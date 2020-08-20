@@ -374,6 +374,7 @@ p {
   justify-content: center;
 }
 .team__net {
+  cursor: pointer;
   display: flex;
   width: 40px;
   height: 40px;
@@ -483,6 +484,7 @@ p {
   justify-content: center;
 }
 .footer__net:hover {
+  cursor: pointer;
   color: #f2d048;
   background-color: #272727;
   transition: color 0.1s linear;
