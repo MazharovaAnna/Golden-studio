@@ -131,9 +131,6 @@ p {
   background-color: #f9f9f9;
 }
 .section--black {
-  /* width: 100%;
-  background: #272727 url("./contact-bg.png") center no-repeat;
-  background-size: cover; */
   background-color: #272727;
 }
 .section__header {
@@ -641,9 +638,11 @@ p {
   /* section
 ===================*/
   .section__header {
-    padding: 30px 0 20px 0;
+    padding: 35px 0 20px 0;
   }
-
+  .section__title {
+    font-size: 35px;
+  }
   /* header
 ===================*/
   .header {
@@ -689,7 +688,7 @@ p {
   }
 }
 @media (max-width: 400px) {
-  /* portfolio
+  /* section
 ===================*/
   .section__title {
     font-size: 30px;
@@ -705,7 +704,7 @@ p {
 }
 
 @media (max-width: 350px) {
-  /* portfolio
+  /*section
 ===================*/
   .section__title {
     font-size: 25px;
