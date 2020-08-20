@@ -40,7 +40,7 @@ p {
   display: flex;
   padding: 55px 0;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .header__logo {
 }
@@ -409,11 +409,13 @@ p {
 .partners {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  /* justify-content: center; */
   padding: 60px 0;
 }
 .partners__img {
-  padding: 0 25px;
+  display: block;
+  padding: 0 20px;
+  width: 25%;
 }
 /*contact
 ===================*/
@@ -422,6 +424,7 @@ p {
 }
 .contact__inner {
   display: flex;
+  flex-wrap: wrap;
 }
 .contact__item {
   width: 50%;
@@ -494,4 +497,138 @@ p {
   background-color: #272727;
   transition: color 0.1s linear;
   transition: background-color 0.1s linear;
+}
+/* Media
+===================*/
+
+@media (max-width: 900px) {
+  /* section
+===================*/
+  .section {
+    padding: 0 0 60px;
+  }
+  .section__header {
+    padding: 60px 0 40px 0;
+  }
+  /* card
+===================*/
+  .card--text-left {
+    right: 62%;
+  }
+  .card--text-right {
+    left: 62%;
+  }
+  /* contact
+===================*/
+  .contact__item {
+    width: 100%;
+    margin: 0;
+  }
+  .contact__btn {
+    padding: 20px 0;
+  }
+}
+@media (max-width: 800px) {
+  /* card
+===================*/
+  /* team
+===================*/
+  .team__item {
+    width: 100%;
+  }
+  /* partners
+===================*/
+  .partners {
+    padding: 30px 0;
+  }
+  .partners__img {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 700px) {
+  /* btn
+===================*/
+  .btn {
+    padding: 20px 35px;
+    font-size: 14px;
+  }
+  /* partners
+===================*/
+
+  .partners__img {
+    padding: 0 3px;
+  }
+}
+@media (max-width: 600px) {
+  /* nav
+===================*/
+  .nav {
+    display: none;
+  }
+
+  /* services
+===================*/
+  .services__item {
+    width: 100%;
+  }
+  /* portfolio
+===================*/
+  .portfolio__item {
+    width: 50%;
+  }
+  .portfolio__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  /* partners
+===================*/
+  .partners {
+    padding: 30px 0;
+  }
+}
+@media (max-width: 600px) {
+  /* section
+===================*/
+  .section__header {
+    padding: 30px 0 20px 0;
+  }
+
+  /* header
+===================*/
+  .header {
+    width: 40%;
+  }
+  .header__inner {
+    padding: 20px 0;
+  }
+  /* intro
+===================*/
+  .intro {
+    padding-top: 0;
+  }
+  .intro__suptitle {
+    font-size: 30px;
+    margin: 0 0 20px 0;
+  }
+  .intro__title {
+    font-size: 40px;
+    margin: 0 0 30px 0;
+  }
+  /* portfolio
+===================*/
+  .portfolio__item {
+    width: 100%;
+  }
+  .portfolio__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  /* footer
+===================*/
+  .copyrighte {
+    padding-right: 0;
+  }
 }
