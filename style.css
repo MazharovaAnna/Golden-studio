@@ -383,6 +383,7 @@ p {
 }
 .team__net {
   display: flex;
+  
   width: 40px;
   height: 40px;
   margin: 0 auto;
@@ -588,7 +589,7 @@ p {
     padding: 30px 0;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   /* section
 ===================*/
   .section__header {
@@ -607,6 +608,9 @@ p {
 ===================*/
   .intro {
     padding-top: 0;
+  }
+  .intro__inner{
+    padding: 0 ;
   }
   .intro__suptitle {
     font-size: 30px;
