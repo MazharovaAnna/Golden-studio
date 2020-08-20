@@ -375,13 +375,13 @@ p {
 }
 .team__network {
   display: flex;
+  justify-content: center;
 }
 .team__net {
   display: flex;
-
   width: 40px;
   height: 40px;
-  margin: 0 auto;
+  margin: 0 5px;
   border-radius: 50%;
   border: 2px solid #272727;
   align-items: center;
@@ -423,7 +423,6 @@ p {
   flex-wrap: wrap;
 }
 .contact__item {
-  width: 50%;
   margin: 0 30px 0 0;
 }
 .contact__item:last-child {
@@ -443,8 +442,8 @@ p {
   border-radius: 3px;
   outline: none;
   resize: none;
-  padding: 15px 20px;
-  width: 460px;
+  padding: 15px 15px;
+  width: 430px;
   height: 50px;
 }
 .contact__inf--mess {
@@ -477,16 +476,15 @@ p {
   justify-content: space-between;
 }
 .footer__net {
-  color: #fff;
-  background-color: #272727;
-  padding: 10px;
-  margin: 0 5px;
-
-  text-align: center;
-  justify-content: center;
-  border-radius: 50%;
+  display: flex;
   width: 40px;
   height: 40px;
+  margin: 0 5px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #272727;
+  align-items: center;
+  justify-content: center;
 }
 .footer__net:hover {
   color: #f2d048;
@@ -494,6 +492,7 @@ p {
   transition: color 0.1s linear;
   transition: background-color 0.1s linear;
 }
+
 /* Media
 ===================*/
 
@@ -536,146 +535,157 @@ p {
   .contact__btn {
     padding: 20px 0;
   }
-
-  @media (max-width: 800px) {
-    /* card
+}
+@media (max-width: 800px) {
+  /* card
 ===================*/
-    .card__title {
-      font-size: 16px;
-    }
-    .card__subtitle {
-      font-size: 16px;
-      padding: 0 0 10px 0;
-    }
-    .card__text {
-      font-size: 12px;
-    }
-    /* team
-===================*/
-    .team__item {
-      width: 100%;
-    }
-    /* partners
-===================*/
-    .partners {
-      padding: 30px 0;
-    }
-    .partners__img {
-      padding: 0 10px;
-    }
+  .card__title {
+    font-size: 16px;
   }
-  @media (max-width: 700px) {
-    /* btn
-===================*/
-    .btn {
-      padding: 20px 35px;
-      font-size: 14px;
-    }
-    /* partners
-===================*/
-
-    .partners__img {
-      padding: 0 3px;
-    }
+  .card__subtitle {
+    font-size: 16px;
+    padding: 0 0 10px 0;
   }
-  @media (max-width: 600px) {
-    /* nav
-===================*/
-    .nav {
-      display: none;
-    }
-
-    /* services
-===================*/
-    .services__item {
-      width: 100%;
-    }
-    /* portfolio
-===================*/
-    .portfolio__item {
-      width: 50%;
-    }
-    .portfolio__img {
-      display: block;
-      width: 100%;
-      height: auto;
-      margin: 0 auto;
-    }
-    /* card
-===================*/
-    .card__title {
-      font-size: 16px;
-      padding: 0 0 5px 0;
-    }
-    .card__subtitle {
-      font-size: 16px;
-      padding: 0 0 5px 0;
-    }
-    .card__text {
-      font-size: 12px;
-    }
-    /* partners
-===================*/
-    .partners {
-      padding: 30px 0;
-    }
-
-    /* card
-===================*/
-    .card__img {
-      width: 100px;
-      height: 100px;
-    }
+  .card__text {
+    font-size: 12px;
   }
-  @media (max-width: 500px) {
-    /* section
+  /* team
 ===================*/
-    .section__header {
-      padding: 30px 0 20px 0;
-    }
+  .team__item {
+    width: 100%;
+  }
+  /* partners
+===================*/
+  .partners {
+    padding: 30px 0;
+  }
+  .partners__img {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 700px) {
+  /* btn
+===================*/
+  .btn {
+    padding: 20px 35px;
+    font-size: 14px;
+  }
+  /* partners
+===================*/
 
-    /* header
+  .partners__img {
+    padding: 0 3px;
+  }
+}
+
+@media (max-width: 600px) {
+  /* nav
 ===================*/
-    .header {
-      width: 40%;
-    }
-    .header__inner {
-      padding: 20px 0;
-    }
-    /* intro
+  .nav {
+    display: none;
+  }
+
+  /* services
 ===================*/
-    .intro {
-      padding-top: 0;
-    }
-    .intro__inner {
-      padding: 0;
-    }
-    .intro__suptitle {
-      font-size: 30px;
-      margin: 0 0 20px 0;
-    }
-    .intro__title {
-      font-size: 40px;
-      margin: 0 0 30px 0;
-    }
-    /* portfolio
+  .services__item {
+    width: 100%;
+  }
+  /* portfolio
 ===================*/
-    .portfolio__item {
-      width: 100%;
-    }
-    .portfolio__img {
-      display: block;
-      max-width: 100%;
-      height: auto;
-    }
-    .portfolio__figcaption {
-      padding: 15px 0;
-    }
-    /* footer
+  .portfolio__item {
+    width: 50%;
+  }
+  .portfolio__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  /* card
 ===================*/
-    .copyrighte {
-      padding-right: 0;
-    }
+  .card__title {
+    font-size: 16px;
+    padding: 0 0 5px 0;
+  }
+  .card__subtitle {
+    font-size: 16px;
+    padding: 0 0 5px 0;
+  }
+  .card__text {
+    font-size: 12px;
+  }
+  /* partners
+===================*/
+  .partners {
+    padding: 30px 0;
+  }
+
+  /* card
+===================*/
+  .card__img {
+    width: 100px;
+    height: 100px;
+  }
+  /*contact
+===================*/
+  .contact__inf {
+    width: 350px;
+    height: 40px;
+    font-size: 12px;
+  }
+  .contact__inf--mess {
+    height: 140px;
+  }
+}
+@media (max-width: 500px) {
+  /* section
+===================*/
+  .section__header {
+    padding: 30px 0 20px 0;
+  }
+
+  /* header
+===================*/
+  .header {
+    width: 40%;
+  }
+  .header__inner {
+    padding: 20px 0;
+  }
+  /* intro
+===================*/
+  .intro {
+    padding-top: 0;
+  }
+  .intro__inner {
+    padding: 0;
+  }
+  .intro__suptitle {
+    font-size: 30px;
+    margin: 0 0 20px 0;
+  }
+  .intro__title {
+    font-size: 40px;
+    margin: 0 0 30px 0;
+  }
+  /* portfolio
+===================*/
+  .portfolio__item {
+    width: 100%;
+  }
+  .portfolio__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  .portfolio__figcaption {
+    padding: 15px 0;
+  }
+
+  /* footer
+===================*/
+  .copyrighte {
+    padding-right: 0;
   }
 }
 @media (max-width: 400px) {
@@ -686,6 +696,11 @@ p {
   }
   .section__text {
     font-size: 14px;
+  }
+  /*contact
+===================*/
+  .contact__inf {
+    width: 250px;
   }
 }
 
