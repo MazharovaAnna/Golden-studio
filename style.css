@@ -308,7 +308,6 @@ p {
 }
 .card__photography {
   display: flex;
-
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
@@ -320,9 +319,9 @@ p {
 
 .card__inner {
   position: absolute;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 1.2;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
   text-transform: uppercase;
   color: #fff;
   font-family: "Montserrat", sans-serif;
@@ -523,6 +522,11 @@ p {
   .card__photo::before {
     display: none;
   }
+  /* team
+===================*/
+  .team__inf {
+    margin: 0 20px;
+  }
   /* contact
 ===================*/
   .contact__item {
@@ -611,17 +615,28 @@ p {
   .card__text {
     font-size: 12px;
   }
-  /* partners
-===================*/
-  .partners {
-    padding: 30px 0;
+  .card__inner {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.2;
   }
-
   /* card
 ===================*/
   .card__img {
     width: 100px;
     height: 100px;
+  }
+  /* team
+===================*/
+  .team__photo {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* partners
+===================*/
+  .partners {
+    padding: 30px 0;
   }
   /*contact
 ===================*/
