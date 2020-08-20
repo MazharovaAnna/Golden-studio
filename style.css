@@ -638,7 +638,7 @@ p {
   /* section
 ===================*/
   .section__header {
-    padding: 35px 0 20px 0;
+    padding: 40px 0 20px 0;
   }
   .section__title {
     font-size: 35px;
@@ -680,7 +680,6 @@ p {
   .portfolio__figcaption {
     padding: 15px 0;
   }
-
   /* footer
 ===================*/
   .copyrighte {
@@ -699,7 +698,7 @@ p {
   /*contact
 ===================*/
   .contact__inf {
-    width: 250px;
+    width: 300px;
   }
 }
 
@@ -711,5 +710,10 @@ p {
   }
   .section__text {
     font-size: 13px;
+  }
+  /*contact
+===================*/
+  .contact__inf {
+    width: 250px;
   }
 }
